@@ -61,4 +61,10 @@ public class MyFirstTestActivityTest
 		ViewAsserts.assertLeftAligned(inputA, inputB);
 		ViewAsserts.assertRightAligned(inputB, inputC);
 	}
+	
+	public void testEditTextShouldStartEmpty(){
+		assertTrue("".equals(inputA.getText()));
+		assertTrue("".equals(inputB.getText()));
+		assertTrue("".equals(inputC.getText()));
+	}
 }
