@@ -55,4 +55,10 @@ public class MyFirstTestActivityTest
 		ViewAsserts.assertOnScreen(origin, inputC);
 		ViewAsserts.assertOnScreen(origin, calculateButton);
 	}
+	
+	public void testAlignment(){
+		ViewAsserts.assertRightAligned(inputA, inputB);
+		ViewAsserts.assertLeftAligned(inputA, inputB);
+		ViewAsserts.assertRightAligned(inputB, inputC);
+	}
 }
