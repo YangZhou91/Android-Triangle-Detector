@@ -67,4 +67,12 @@ public class MyFirstTestActivityTest
 		assertTrue(inputB.getText().toString().length() == 0);
 		assertTrue(inputC.getText().toString().length() == 0);
 	}
+	
+	public void testGetInput(){
+		final String actual = "32";
+		inputA.requestFocus();
+		inputA.setText(actual);
+		final String expected = inputA.getText().toString();
+		assertEquals(expected, actual);
+	}
 }
