@@ -5,7 +5,7 @@ import android.app.Activity;
 import android.view.Menu;
 
 public class MyFirstTestActivity extends Activity {
-
+/*
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,5 +19,6 @@ public class MyFirstTestActivity extends Activity {
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
-    
+*/    
 }
+
