@@ -63,8 +63,8 @@ public class MyFirstTestActivityTest
 	}
 	
 	public void testEditTextShouldStartEmpty(){
-		assertTrue("".equals(inputA.getText()));
-		assertTrue("".equals(inputB.getText()));
-		assertTrue("".equals(inputC.getText()));
+		assertTrue(inputA.getText().toString().length() == 0);
+		assertTrue(inputB.getText().toString().length() == 0);
+		assertTrue(inputC.getText().toString().length() == 0);
 	}
 }

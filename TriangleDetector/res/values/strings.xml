@@ -4,5 +4,8 @@
     <string name="app_name">Triangle Detector</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="inputA"></string>
+    <string name="inputB"></string>
+    <string name="inputC"></string>
 
 </resources>
