@@ -8,10 +8,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
-    <TextView
-        android:id="@+id/my_first_text_view"
+    <EditText
+        android:id="@+id/editText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@+string/my_first_test" />
+        android:layout_below="@+id/my_first_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="62dp"
+        android:ems="10" 
+        android:text="@+string/hello_world">
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
