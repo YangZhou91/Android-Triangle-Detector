@@ -4,6 +4,7 @@ import com.mcgill.triangledetector.MyFirstTestActivity;
 import com.mcgill.triangledetector.R;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MyFirstTestActivityTest
@@ -11,6 +12,8 @@ public class MyFirstTestActivityTest
 {
 
 	private MyFirstTestActivity mFirstTestActivity;
+	private EditText inputA, inputB, inputC;
+	
 	
 	public MyFirstTestActivityTest() {
 		super(MyFirstTestActivity.class);
@@ -26,5 +29,11 @@ public class MyFirstTestActivityTest
 	
 	public void testNullActiviey(){
 		assertNotNull("mFirstTestActivity is null", mFirstTestActivity);
+	}
+	
+	public void testNullEditText(){
+		assertNotNull(inputA);
+		assertNotNull(inputB);
+		assertNotNull(inputC);
 	}
 }
