@@ -29,6 +29,7 @@ public class MyFirstTestActivityTest
 		inputA = (EditText)mFirstTestActivity.findViewById(R.id.editText1);
 		inputB = (EditText)mFirstTestActivity.findViewById(R.id.editText2);
 		inputC = (EditText)mFirstTestActivity.findViewById(R.id.editText3);
+		calculateButton = (Button)mFirstTestActivity.findViewById(R.id.button1);
 	}
 	
 	public void testNullActiviey(){

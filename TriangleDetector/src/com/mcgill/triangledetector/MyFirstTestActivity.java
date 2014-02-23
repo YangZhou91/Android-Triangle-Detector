@@ -3,6 +3,7 @@ package com.mcgill.triangledetector;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
+import android.widget.Button;
 import android.widget.EditText;
 
 public class MyFirstTestActivity extends Activity {
@@ -14,6 +15,7 @@ public class MyFirstTestActivity extends Activity {
         EditText inputA = (EditText)this.findViewById(R.id.editText1);
         EditText inputB = (EditText)this.findViewById(R.id.editText2);
         EditText inputC = (EditText)this.findViewById(R.id.editText3);
+        Button calculateButton = (Button)this.findViewById(R.id.button1);
     }
 
 
