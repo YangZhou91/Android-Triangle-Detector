@@ -4,6 +4,7 @@ import com.mcgill.triangledetector.MyFirstTestActivity;
 import com.mcgill.triangledetector.R;
 
 import android.test.ActivityInstrumentationTestCase2;
+import android.test.UiThreadTest;
 import android.test.ViewAsserts;
 import android.view.View;
 import android.widget.Button;
@@ -68,10 +69,11 @@ public class MyFirstTestActivityTest
 		assertTrue(inputC.getText().toString().length() == 0);
 	}
 	
+	@UiThreadTest
 	public void testGetInput(){
 		final String actual = "32";
-		inputA.requestFocus();
 		inputA.setText(actual);
+		calculateButton.performClick();
 		final String expected = inputA.getText().toString();
 		assertEquals(expected, actual);
 	}
