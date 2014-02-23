@@ -12,6 +12,8 @@ public class MyFirstTestActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         EditText inputA = (EditText)this.findViewById(R.id.editText1);
+        EditText inputB = (EditText)this.findViewById(R.id.editText2);
+        EditText inputC = (EditText)this.findViewById(R.id.editText3);
     }
 
 

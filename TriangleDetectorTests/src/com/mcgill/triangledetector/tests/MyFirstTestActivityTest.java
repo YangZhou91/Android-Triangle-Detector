@@ -27,6 +27,8 @@ public class MyFirstTestActivityTest
 		super.setUp();
 		mFirstTestActivity = this.getActivity();
 		inputA = (EditText)mFirstTestActivity.findViewById(R.id.editText1);
+		inputB = (EditText)mFirstTestActivity.findViewById(R.id.editText2);
+		inputC = (EditText)mFirstTestActivity.findViewById(R.id.editText3);
 	}
 	
 	public void testNullActiviey(){
