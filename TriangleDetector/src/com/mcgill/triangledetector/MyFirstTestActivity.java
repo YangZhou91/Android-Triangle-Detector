@@ -18,7 +18,7 @@ public class MyFirstTestActivity extends Activity {
         EditText inputB = (EditText)this.findViewById(R.id.editText2);
         EditText inputC = (EditText)this.findViewById(R.id.editText3);
         Button calculateButton = (Button)this.findViewById(R.id.button1);
-        
+       /* 
         calculateButton.setOnClickListener(
         		new View.OnClickListener() {
 					
@@ -28,6 +28,7 @@ public class MyFirstTestActivity extends Activity {
 					}
         		}
         		);
+        */
     }
 
 
@@ -36,6 +37,10 @@ public class MyFirstTestActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    
+    public boolean validateInputs(String a, String b, String c){
+    	return false;
     }
 }
 

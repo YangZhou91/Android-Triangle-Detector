@@ -71,10 +71,20 @@ public class MyFirstTestActivityTest
 	
 	@UiThreadTest
 	public void testGetInput(){
-		final String actual = "32";
+		final String actual = "33";
 		inputA.setText(actual);
 		calculateButton.performClick();
 		final String expected = inputA.getText().toString();
+		assertEquals(expected, "33");
+	}
+	
+	@UiThreadTest
+	public void testInvalidInput(){
+		final String inputA = "test";
+		final String inputB = "test";
+		final String inputC = "test";
+		boolean actual = mFirstTestActivity.validateInputs(inputA, inputB, inputC);
+		final boolean expected = true;
 		assertEquals(expected, actual);
 	}
 }
