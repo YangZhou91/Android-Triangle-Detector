@@ -130,11 +130,12 @@ public class MyFirstTestActivityTest
 	}
 	
 	public void testNotTriangle(){
-		final String inputA = "100";
-		final String inputB = "1";
-		final String inputC = "1";
+		final String inputA = "50";
+		final String inputB = "20";
+		final String inputC = "40";
+		// The expected result returns true if sum of any two lengths are greater than the other
 		final boolean expected = true;
-		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
+		boolean actual = mFirstTestActivity.validateNotTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
 }
