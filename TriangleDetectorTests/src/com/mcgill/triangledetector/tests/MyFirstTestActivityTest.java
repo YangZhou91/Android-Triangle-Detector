@@ -8,6 +8,7 @@ import android.test.UiThreadTest;
 import android.test.ViewAsserts;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.EditText;
 
 public class MyFirstTestActivityTest
@@ -15,7 +16,8 @@ public class MyFirstTestActivityTest
 {
 
 	private MyFirstTestActivity mFirstTestActivity;
-	private EditText inputA, inputB, inputC, output;
+	private EditText inputA, inputB, inputC;
+	private TextView output;
 	private Button calculateButton;
 	
 	
@@ -32,6 +34,7 @@ public class MyFirstTestActivityTest
 		inputA = (EditText)mFirstTestActivity.findViewById(R.id.editText1);
 		inputB = (EditText)mFirstTestActivity.findViewById(R.id.editText2);
 		inputC = (EditText)mFirstTestActivity.findViewById(R.id.editText3);
+//		output = (TextView)mFirstTestActivity.findViewById(R.id.textView1);
 		calculateButton = (Button)mFirstTestActivity.findViewById(R.id.button1);
 	}
 	
@@ -43,6 +46,9 @@ public class MyFirstTestActivityTest
 		assertNotNull("inputA is null", inputA);
 		assertNotNull("inputB  is null", inputB);
 		assertNotNull("inputC is null", inputC);
+	}
+
+	public void testNullViewText(){
 		assertNotNull("output is null", output);
 	}
 	
