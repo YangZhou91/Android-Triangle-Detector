@@ -34,7 +34,7 @@ public class MyFirstTestActivityTest
 		inputA = (EditText)mFirstTestActivity.findViewById(R.id.editText1);
 		inputB = (EditText)mFirstTestActivity.findViewById(R.id.editText2);
 		inputC = (EditText)mFirstTestActivity.findViewById(R.id.editText3);
-//		output = (TextView)mFirstTestActivity.findViewById(R.id.textView1);
+		output = (TextView)mFirstTestActivity.findViewById(R.id.textView1);
 		calculateButton = (Button)mFirstTestActivity.findViewById(R.id.button1);
 	}
 	
