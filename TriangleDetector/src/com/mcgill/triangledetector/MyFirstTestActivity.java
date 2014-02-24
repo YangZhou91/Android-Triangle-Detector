@@ -68,12 +68,16 @@ public class MyFirstTestActivity extends Activity {
 
 
 	public boolean validateEquilateralTriangle(String a, String b, String c) {
-		if (a == b && b == c && c == b){
-			return true;
-		}
-		else {
+//		int lengthA = Integer.parseInt(a); 
+//    	int lengthB = Integer.parseInt(b);
+//    	int lengthC = Integer.parseInt(c);
+//    	
+//		if (lengthA == lengthB && lengthB == lengthC && lengthC == lengthA){
+//			return true;
+//		}
+//		else {
 		return false;
-		}
+//		}
 	}
 }
 

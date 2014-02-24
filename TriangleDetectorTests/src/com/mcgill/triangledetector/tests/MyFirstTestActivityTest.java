@@ -79,9 +79,10 @@ public class MyFirstTestActivityTest
 	}
 	
 	public void testInvalidInput(){
-		final String inputA = "2";
-		final String inputB = "2";
-		final String inputC = "2";
+		final String inputA = "7";
+		final String inputB = "5";
+		final String inputC = "10";
+		// The expected result returns true if input arguments are integers
 		final boolean expected = true;
 		boolean actual = mFirstTestActivity.validateInputs(inputA, inputB, inputC);
 		assertEquals(expected, actual);
@@ -91,6 +92,7 @@ public class MyFirstTestActivityTest
 		final String inputA = "50";
 		final String inputB = "40";
 		final String inputC = "30";
+		// The expected result returns true if input arguments are between 1 and 100
 		final boolean expected = true; 
 		boolean actual = mFirstTestActivity.validateInputRange(inputA, inputB, inputC);
 		assertEquals(expected, actual);
@@ -101,6 +103,7 @@ public class MyFirstTestActivityTest
 		final String inputB = "15";
 		final String inputC = "15";
 		final boolean expected = true;
+		// The expected result returns true if input arguments are the same with each other
 		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
