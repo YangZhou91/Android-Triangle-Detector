@@ -32,7 +32,10 @@ public class MyFirstTestActivity extends Activity {
         		String valueB = inputB.getText().toString();
         		String valueC = inputC.getText().toString();
         		
-        		if (!validateInputs(valueA,valueB,valueC)){
+        		if (!validateEmpty(valueA,valueB,valueC)){
+        			output.setText("Please enter all three values");
+        		}
+        		else if (!validateInputs(valueA,valueB,valueC)){
         			output.setText("Please enter NUMBER!");	
         		}
         		else if (!validateInputRange(valueA,valueB,valueC)){
@@ -49,6 +52,20 @@ public class MyFirstTestActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+    
+    public boolean validateEmpty(String inputA, String inputB, String inputC){
+    	if (inputA == null){
+    		return false;
+    	}
+    	else if (inputB == null){
+    		return false;
+    	}
+    	else if (inputC == null){
+    		return false;
+    	}
+    	else return true;
+    	
     }
     
     public boolean validateInputs(String a, String b, String c){
