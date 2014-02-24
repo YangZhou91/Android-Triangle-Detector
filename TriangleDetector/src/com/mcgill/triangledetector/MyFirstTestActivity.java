@@ -51,7 +51,19 @@ public class MyFirstTestActivity extends Activity {
     }
     
     public boolean validateInputRange(String a, String b, String c){
-    	return false;
+    	int lengthA = Integer.parseInt(a); 
+    	int lengthB = Integer.parseInt(b);
+    	int lengthC = Integer.parseInt(c);
+    	
+    	if (lengthA < 1 || lengthB < 1 || lengthC < 1){
+    		return false;
+    	}
+    	else if (lengthA > 100 || lengthB > 100 || lengthC > 100){
+			return false;
+		}
+    	else{
+    		return true;
+    	}
     }
 }
 
