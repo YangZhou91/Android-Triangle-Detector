@@ -68,6 +68,17 @@ public class MyFirstTestActivity extends Activity {
 
 
 	public boolean validateEquilateralTriangle(String a, String b, String c) {
+		if (a == b && b == c && c == b){
+			return true;
+		}
+		else {
+		return false;
+		}
+	}
+
+
+	public boolean validateScaleneTrangle(String inputA, String inputB,
+			String inputC) {
 		// TODO Auto-generated method stub
 		return false;
 	}
