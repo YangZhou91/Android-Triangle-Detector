@@ -33,7 +33,7 @@ public class MyFirstTestActivity extends Activity {
         		String valueC = inputC.getText().toString();
         		
         		if (!validateEmpty(valueA,valueB,valueC)){
-        			//output.setText("Please enter all three values");
+        			output.setText("Please enter all three values");
         		}
         		else if (!validateInputs(valueA,valueB,valueC)&&validateEmpty(valueA, valueB, valueC)){
         			output.setText("Please enter NUMBER!");	

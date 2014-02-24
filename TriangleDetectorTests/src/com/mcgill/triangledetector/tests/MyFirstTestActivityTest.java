@@ -190,5 +190,15 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
-	
+	@UiThreadTest
+	public void testIntegrationIsoscelesTriangle(){
+		inputA.setText("15");
+		inputB.setText("12");
+		inputC.setText("14");
+		calculateButton.performClick();
+		final String expected = "Scalene";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
+
 }
