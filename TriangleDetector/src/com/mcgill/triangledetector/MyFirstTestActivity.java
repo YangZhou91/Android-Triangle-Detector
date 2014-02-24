@@ -53,5 +53,11 @@ public class MyFirstTestActivity extends Activity {
     public boolean validateInputRange(String a, String b, String c){
     	return false;
     }
+
+
+	public boolean validateEquilateralTriangle(String a, String b, String c) {
+		// TODO Auto-generated method stub
+		return false;
+	}
 }
 

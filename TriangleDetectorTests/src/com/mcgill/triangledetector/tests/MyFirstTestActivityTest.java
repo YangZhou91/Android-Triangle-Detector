@@ -95,4 +95,13 @@ public class MyFirstTestActivityTest
 		boolean actual = mFirstTestActivity.validateInputRange(inputA, inputB, inputC);
 		assertEquals(expected, actual);
  	}
+	
+	public void testEquilateralTriangle(){
+		final String inputA = "15";
+		final String inputB = "15";
+		final String inputC = "5";
+		final boolean expected = true;
+		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
+		assertEquals(expected, actual);
+	}
 }
