@@ -34,7 +34,7 @@ public class MyFirstTestActivityTest
 		inputA = (EditText)mFirstTestActivity.findViewById(R.id.editText1);
 		inputB = (EditText)mFirstTestActivity.findViewById(R.id.editText2);
 		inputC = (EditText)mFirstTestActivity.findViewById(R.id.editText3);
-//		output = (TextView)mFirstTestActivity.findViewById(R.id.textView1);
+		output = (TextView)mFirstTestActivity.findViewById(R.id.textView1);
 		calculateButton = (Button)mFirstTestActivity.findViewById(R.id.button1);
 	}
 	
@@ -149,7 +149,12 @@ public class MyFirstTestActivityTest
 	 * The Start of Integration test.
 	 * */
 	public void testIntegrationInvalidInput(){
-		inputA.setText("Text");
-		inputB.setText("Text");
+		inputA.setText("3");
+		inputB.setText("4");
+		inputC.setText("5");
+		calculateButton.performClick();
+		final String expected = "Please enter a number between 1 and 100";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
 	}
 }
