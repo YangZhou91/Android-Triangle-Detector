@@ -18,17 +18,7 @@ public class MyFirstTestActivity extends Activity {
         EditText inputB = (EditText)this.findViewById(R.id.editText2);
         EditText inputC = (EditText)this.findViewById(R.id.editText3);
         Button calculateButton = (Button)this.findViewById(R.id.button1);
-       /* 
-        calculateButton.setOnClickListener(
-        		new View.OnClickListener() {
-					
-					@Override
-					public void onClick(View v) {
-						Log.v("EditText", inputA.getText().toString());
-					}
-        		}
-        		);
-        */
+        //calculateButton.setOnClickListener()
     }
 
 

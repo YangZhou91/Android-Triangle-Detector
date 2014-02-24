@@ -15,7 +15,7 @@ public class MyFirstTestActivityTest
 {
 
 	private MyFirstTestActivity mFirstTestActivity;
-	private EditText inputA, inputB, inputC;
+	private EditText inputA, inputB, inputC, output;
 	private Button calculateButton;
 	
 	
@@ -43,6 +43,7 @@ public class MyFirstTestActivityTest
 		assertNotNull("inputA is null", inputA);
 		assertNotNull("inputB  is null", inputB);
 		assertNotNull("inputC is null", inputC);
+		assertNotNull("output is null", output);
 	}
 	
 	public void testNullButton(){
