@@ -94,10 +94,23 @@ public class MyFirstTestActivity extends Activity {
 		}
 	}
 
-	public boolean validateIsoscelesTriangle(String inputA, String inputB,
-			String inputC) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean validateIsoscelesTriangle(String inputA, String inputB, String inputC) {
+		int lengthA = Integer.parseInt(inputA); 
+    	int lengthB = Integer.parseInt(inputB);
+    	int lengthC = Integer.parseInt(inputC);
+    	
+    	if (lengthA == lengthB && lengthB != lengthC){
+    		return true;
+    	}
+    	if (lengthA == lengthC && lengthB != lengthC){
+    		return true;
+    	}
+    	if (lengthB == lengthC && lengthA != lengthC){
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
 	}
 }
 
