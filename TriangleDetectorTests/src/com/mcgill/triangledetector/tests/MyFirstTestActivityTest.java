@@ -107,4 +107,14 @@ public class MyFirstTestActivityTest
 		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
+	
+	public void testScaleneTrangle(){
+		final String inputA = "3";
+		final String inputB = "4";
+		final String inputC = "5";
+		// The expected result returns true means it is Scalene Trangle.
+		final boolean expected = true;
+		boolean actual = mFirstTestActivity.validateScaleneTrangle(inputA, inputB, inputC);
+		assertEquals(expected, actual);
+	}
 }
