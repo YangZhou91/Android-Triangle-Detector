@@ -158,4 +158,14 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
+	@UiThreadTest
+	public void testIntegrationInvalidRange(){
+		inputA.setText("1000");
+		inputB.setText("1000");
+		inputC.setText("1000");
+		calculateButton.performClick();
+		final String expected = "Please enter values between 1 and 100!";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
 }
