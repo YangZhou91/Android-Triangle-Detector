@@ -148,8 +148,9 @@ public class MyFirstTestActivityTest
 	/*
 	 * The Start of Integration test.
 	 * */
+	@UiThreadTest
 	public void testIntegrationInvalidInput(){
-		inputA.setText("3");
+		inputA.setText("Test");
 		inputB.setText("4");
 		inputC.setText("5");
 		calculateButton.performClick();
