@@ -168,4 +168,26 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
+	@UiThreadTest
+	public void testIntegrationEmptyInput(){
+		inputA.setText("");
+		inputB.setText("1000");
+		inputC.setText("1000");
+		calculateButton.performClick();
+		final String expected = "Please enter all three values.";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
+	/*
+	@UiThreadTest
+	public void testIntegrationEquilateralTriangle(){
+		inputA.setText("10");
+		inputB.setText("10");
+		inputC.setText("3");
+		calculateButton.performClick();
+		final String expected = "EquilateralTriangle";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
+	*/
 }
