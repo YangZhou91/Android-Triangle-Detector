@@ -44,7 +44,9 @@ public class MyFirstTestActivity extends Activity {
         		else if (validateEquilateralTriangle(valueA,valueB,valueC)){
         			output.setText("Equilateral Triangle");	
         		}
-        		
+        		else if (validateScaleneTrangle(valueA,valueB,valueC)){
+        			output.setText("Scalene Triangle");	
+        		}
         	}
         });
     }
