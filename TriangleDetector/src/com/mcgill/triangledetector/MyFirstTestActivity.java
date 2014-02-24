@@ -68,23 +68,30 @@ public class MyFirstTestActivity extends Activity {
 
 
 	public boolean validateEquilateralTriangle(String a, String b, String c) {
-//		int lengthA = Integer.parseInt(a); 
-//    	int lengthB = Integer.parseInt(b);
-//    	int lengthC = Integer.parseInt(c);
-//    	
-//		if (lengthA == lengthB && lengthB == lengthC && lengthC == lengthA){
-//			return true;
-//		}
-//		else {
+		int lengthA = Integer.parseInt(a); 
+    	int lengthB = Integer.parseInt(b);
+    	int lengthC = Integer.parseInt(c);
+    	
+		if (lengthA == lengthB && lengthB == lengthC && lengthC == lengthA){
+			return true;
+		}
+		else {
 		return false;
-//		}
+		}
 	}
 
 
-	public boolean validateScaleneTrangle(String inputA, String inputB,
-			String inputC) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean validateScaleneTrangle(String inputA, String inputB, String inputC) {
+		int lengthA = Integer.parseInt(inputA); 
+    	int lengthB = Integer.parseInt(inputB);
+    	int lengthC = Integer.parseInt(inputC);
+    	
+		if (lengthA != lengthB && lengthA != lengthC && lengthB != lengthC){
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 }
 
