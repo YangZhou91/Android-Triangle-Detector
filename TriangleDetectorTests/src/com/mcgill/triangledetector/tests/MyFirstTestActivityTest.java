@@ -99,7 +99,7 @@ public class MyFirstTestActivityTest
 	public void testEquilateralTriangle(){
 		final String inputA = "15";
 		final String inputB = "15";
-		final String inputC = "5";
+		final String inputC = "15";
 		final boolean expected = true;
 		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
