@@ -144,4 +144,17 @@ public class MyFirstTestActivityTest
 		boolean actual = mFirstTestActivity.validateNotTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
+	
+	/*
+	 * The Start of Integration test.
+	 * */
+	public void testIntegrationInvalidInput(){
+		inputA.setText("3");
+		inputB.setText("4");
+		inputC.setText("5");
+		calculateButton.performClick();
+		final String expected = "Please enter a number between 1 and 100";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
 }
