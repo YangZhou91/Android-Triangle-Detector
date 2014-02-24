@@ -114,4 +114,15 @@ public class MyFirstTestActivityTest
 		boolean actual = mFirstTestActivity.validateScaleneTrangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
+	
+	public void testIsoscelesTriangle(){
+		final String inputA = "15";
+		final String inputB = "15";
+		final String inputC = "5";
+		// The expected result returns true means it is Isosceles Triangle.
+		final boolean expected = true;
+		boolean actual = mFirstTestActivity.validateIsoscelesTriangle(inputA, inputB, inputC);
+		assertEquals(expected, actual);
+	}
+	
 }

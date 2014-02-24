@@ -79,6 +79,12 @@ public class MyFirstTestActivity extends Activity {
 
 	public boolean validateScaleneTrangle(String inputA, String inputB,
 			String inputC) {
+		return false;
+	}
+
+
+	public boolean validateIsoscelesTriangle(String inputA, String inputB,
+			String inputC) {
 		// TODO Auto-generated method stub
 		return false;
 	}
