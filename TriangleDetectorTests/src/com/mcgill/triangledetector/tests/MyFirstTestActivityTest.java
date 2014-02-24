@@ -88,9 +88,9 @@ public class MyFirstTestActivityTest
 	}
 	
 	public void testInvalidRange(){
-		final String inputA = "200";
-		final String inputB = "200";
-		final String inputC = "200";
+		final String inputA = "50";
+		final String inputB = "40";
+		final String inputC = "30";
 		final boolean expected = true; 
 		boolean actual = mFirstTestActivity.validateInputRange(inputA, inputB, inputC);
 		assertEquals(expected, actual);
