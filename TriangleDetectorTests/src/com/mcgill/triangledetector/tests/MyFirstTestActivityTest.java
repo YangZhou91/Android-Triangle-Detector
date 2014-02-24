@@ -128,4 +128,12 @@ public class MyFirstTestActivityTest
 		assertEquals(expected, actual);
 	}
 	
+	public void testNotTriangle(){
+		final String inputA = "100";
+		final String inputB = "1";
+		final String inputC = "1";
+		final boolean expected = true;
+		boolean actual = mFirstTestActivity.validateEquilateralTriangle(inputA, inputB, inputC);
+		assertEquals(expected, actual);
+	}
 }
