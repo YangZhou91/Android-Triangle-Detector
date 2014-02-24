@@ -139,8 +139,8 @@ public class MyFirstTestActivityTest
 		final String inputA = "50";
 		final String inputB = "20";
 		final String inputC = "40";
-		// The expected result returns true if sum of any two lengths are greater than the other
-		final boolean expected = true;
+		// The expected result returns false if it is a triangle
+		final boolean expected = false;
 		boolean actual = mFirstTestActivity.validateNotTriangle(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
@@ -200,7 +200,7 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
-	/*
+	
 	@UiThreadTest
 	public void testIntegrationIsoscelesTriangle(){
 		inputA.setText("10");
@@ -211,5 +211,15 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
-	*/
+	@UiThreadTest
+	public void testIntegrationNotTriangle(){
+		inputA.setText("100");
+		inputB.setText("10");
+		inputC.setText("2");
+		calculateButton.performClick();
+		final String expected = "It is not a Triangle";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
+	
 }

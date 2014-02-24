@@ -44,8 +44,14 @@ public class MyFirstTestActivity extends Activity {
         		else if (validateEquilateralTriangle(valueA,valueB,valueC)){
         			output.setText("Equilateral Triangle");	
         		}
-        		else if (validateScaleneTrangle(valueA,valueB,valueC)){
+        		else if (validateScaleneTrangle(valueA,valueB,valueC) &&!validateNotTriangle(valueA, valueB, valueC)){
         			output.setText("Scalene Triangle");	
+        		}
+        		else if (validateIsoscelesTriangle(valueA,valueB,valueC)){
+        			output.setText("Isoscalene Triangle");	
+        		}
+        		else if (validateNotTriangle(valueA,valueB,valueC)){
+        			output.setText("It is not a Triangle");	
         		}
         	}
         });
@@ -147,10 +153,10 @@ public class MyFirstTestActivity extends Activity {
     	int lengthC = Integer.parseInt(inputC);
     	
     	if ((lengthA+lengthB > lengthC) && (lengthA+lengthC > lengthB) && (lengthC+lengthB > lengthA)){
-    		return true;
+    		return false;
     	}
     	else {
-    		return false;
+    		return true;
     	}
 	}
 	
