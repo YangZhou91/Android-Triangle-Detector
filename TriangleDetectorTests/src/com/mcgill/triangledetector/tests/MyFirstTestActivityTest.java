@@ -186,7 +186,7 @@ public class MyFirstTestActivityTest
 		inputB.setText("10");
 		inputC.setText("10");
 		calculateButton.performClick();
-		final String expected = "EquilateralTriangle";
+		final String expected = "Equilateral Triangle";
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
