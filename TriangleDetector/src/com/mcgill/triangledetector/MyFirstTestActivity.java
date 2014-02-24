@@ -33,9 +33,9 @@ public class MyFirstTestActivity extends Activity {
         		String valueC = inputC.getText().toString();
         		
         		if (!validateEmpty(valueA,valueB,valueC)){
-        			output.setText("Please enter all three values");
+        			//output.setText("Please enter all three values");
         		}
-        		else if (!validateInputs(valueA,valueB,valueC)){
+        		else if (!validateInputs(valueA,valueB,valueC)&&validateEmpty(valueA, valueB, valueC)){
         			output.setText("Please enter NUMBER!");	
         		}
         		else if (!validateInputRange(valueA,valueB,valueC)){
@@ -55,16 +55,10 @@ public class MyFirstTestActivity extends Activity {
     }
     
     public boolean validateEmpty(String inputA, String inputB, String inputC){
-    	if (inputA == null){
+    	if (inputA.length() == 0 || inputB.length() == 0 || inputC.length() ==0)
     		return false;
-    	}
-    	else if (inputB == null){
-    		return false;
-    	}
-    	else if (inputC == null){
-    		return false;
-    	}
-    	else return true;
+    		
+		return true;
     	
     }
     
