@@ -41,6 +41,9 @@ public class MyFirstTestActivity extends Activity {
         		else if (!validateInputRange(valueA,valueB,valueC)){
         			output.setText("Please enter values between 1 and 100!");	
         		}
+        		else if (validateEquilateralTriangle(valueA,valueB,valueC)){
+        			output.setText("Equilateral Triangle");	
+        		}
         		
         	}
         });
