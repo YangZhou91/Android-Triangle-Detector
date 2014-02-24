@@ -112,5 +112,19 @@ public class MyFirstTestActivity extends Activity {
     		return false;
     	}
 	}
+	
+	public boolean validateNotTriangle(String inputA, String inputB, String inputC) {
+		int lengthA = Integer.parseInt(inputA); 
+    	int lengthB = Integer.parseInt(inputB);
+    	int lengthC = Integer.parseInt(inputC);
+    	
+    	if ((lengthA+lengthB > lengthC) && (lengthA+lengthC > lengthB) && (lengthC+lengthB > lengthA)){
+    		return true;
+    	}
+    	else {
+    		return false;
+    	}
+	}
+	
 }
 
