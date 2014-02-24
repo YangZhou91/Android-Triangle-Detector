@@ -33,8 +33,12 @@ public class MyFirstTestActivity extends Activity {
         		String valueC = inputC.getText().toString();
         		
         		if (!validateInputs(valueA,valueB,valueC)){
-        			output.setText("Please enter NUMBER!");
+        			output.setText("Please enter NUMBER!");	
         		}
+        		else if (!validateInputRange(valueA,valueB,valueC)){
+        			output.setText("Please enter values between 1 and 100!");	
+        		}
+        		
         	}
         });
     }
