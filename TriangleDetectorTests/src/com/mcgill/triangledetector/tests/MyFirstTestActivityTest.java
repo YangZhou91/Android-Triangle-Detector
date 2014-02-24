@@ -179,16 +179,16 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
-	/*
+	
 	@UiThreadTest
 	public void testIntegrationEquilateralTriangle(){
 		inputA.setText("10");
 		inputB.setText("10");
-		inputC.setText("3");
+		inputC.setText("10");
 		calculateButton.performClick();
 		final String expected = "EquilateralTriangle";
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
-	*/
+	
 }
