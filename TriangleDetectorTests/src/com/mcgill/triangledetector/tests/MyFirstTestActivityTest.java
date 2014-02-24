@@ -148,12 +148,13 @@ public class MyFirstTestActivityTest
 	/*
 	 * The Start of Integration test.
 	 * */
+	@UiThreadTest
 	public void testIntegrationInvalidInput(){
-		inputA.setText("3");
+		inputA.setText("Test");
 		inputB.setText("4");
 		inputC.setText("5");
 		calculateButton.performClick();
-		final String expected = "Please enter a number between 1 and 100";
+		final String expected = "Please enter NUMBER!";
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}

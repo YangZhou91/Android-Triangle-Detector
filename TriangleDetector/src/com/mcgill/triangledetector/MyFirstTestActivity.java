@@ -11,16 +11,32 @@ import android.widget.EditText;
 
 public class MyFirstTestActivity extends Activity {
 
+	EditText inputA;
+	EditText inputB;
+	EditText inputC;
+	TextView output;
+	Button calculateButton;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final EditText inputA = (EditText)this.findViewById(R.id.editText1);
-        EditText inputB = (EditText)this.findViewById(R.id.editText2);
-        EditText inputC = (EditText)this.findViewById(R.id.editText3);
-        TextView output = (TextView)this.findViewById(R.id.textView1);
-        Button calculateButton = (Button)this.findViewById(R.id.button1);
-        //calculateButton.setOnClickListener()
+        inputA = (EditText)this.findViewById(R.id.editText1);
+        inputB = (EditText)this.findViewById(R.id.editText2);
+        inputC = (EditText)this.findViewById(R.id.editText3);
+        output = (TextView)this.findViewById(R.id.textView1);
+        calculateButton = (Button)this.findViewById(R.id.button1);
+        calculateButton.setOnClickListener(new View.OnClickListener(){
+        	public void onClick(View v) {
+        		String valueA = inputA.getText().toString();
+        		String valueB = inputB.getText().toString();
+        		String valueC = inputC.getText().toString();
+        		
+        		if (!validateInputs(valueA,valueB,valueC)){
+        			output.setText("Please enter NUMBER!");
+        		}
+        	}
+        });
     }
 
 
@@ -117,6 +133,8 @@ public class MyFirstTestActivity extends Activity {
     		return false;
     	}
 	}
+	
+	
 	
 }
 
