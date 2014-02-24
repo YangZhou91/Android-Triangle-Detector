@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.EditText;
 
 public class MyFirstTestActivity extends Activity {
@@ -17,6 +18,7 @@ public class MyFirstTestActivity extends Activity {
         final EditText inputA = (EditText)this.findViewById(R.id.editText1);
         EditText inputB = (EditText)this.findViewById(R.id.editText2);
         EditText inputC = (EditText)this.findViewById(R.id.editText3);
+        TextView output = (TextView)this.findViewById(R.id.textView1);
         Button calculateButton = (Button)this.findViewById(R.id.button1);
         //calculateButton.setOnClickListener()
     }

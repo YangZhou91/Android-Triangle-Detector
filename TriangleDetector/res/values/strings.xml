@@ -7,5 +7,6 @@
     <string name="inputA"></string>
     <string name="inputB"></string>
     <string name="inputC"></string>
+    <string name="output"/>
 
 </resources>
