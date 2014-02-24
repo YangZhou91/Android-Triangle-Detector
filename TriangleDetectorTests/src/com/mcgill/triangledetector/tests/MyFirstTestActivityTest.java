@@ -80,9 +80,9 @@ public class MyFirstTestActivityTest
 	
 	@UiThreadTest
 	public void testInvalidInput(){
-		final String inputA = "test";
-		final String inputB = "test";
-		final String inputC = "test";
+		final String inputA = "2";
+		final String inputB = "2";
+		final String inputC = "2";
 		boolean actual = mFirstTestActivity.validateInputs(inputA, inputB, inputC);
 		final boolean expected = true;
 		assertEquals(expected, actual);

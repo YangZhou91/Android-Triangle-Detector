@@ -40,7 +40,14 @@ public class MyFirstTestActivity extends Activity {
     }
     
     public boolean validateInputs(String a, String b, String c){
-    	return false;
+    	try {
+    		Integer.parseInt(a);
+    		Integer.parseInt(b);
+    		Integer.parseInt(c);
+    	} catch(NumberFormatException e){
+    		return false;
+    	}
+    	return true;
     }
 }
 
