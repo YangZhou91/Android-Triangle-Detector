@@ -158,6 +158,7 @@ public class MyFirstTestActivityTest
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
+	
 	@UiThreadTest
 	public void testIntegrationInvalidRange(){
 		inputA.setText("1000");
