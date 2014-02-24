@@ -186,18 +186,30 @@ public class MyFirstTestActivityTest
 		inputB.setText("10");
 		inputC.setText("10");
 		calculateButton.performClick();
-		final String expected = "EquilateralTriangle";
+		final String expected = "Equilateral Triangle";
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
 	@UiThreadTest
-	public void testIntegrationIsoscelesTriangle(){
+	public void testIntegrationScelesTriangle(){
 		inputA.setText("15");
 		inputB.setText("12");
 		inputC.setText("14");
 		calculateButton.performClick();
-		final String expected = "Scalene";
+		final String expected = "Scalene Triangle";
 		String actual = output.getText().toString();
 		assertEquals(expected, actual);
 	}
+	/*
+	@UiThreadTest
+	public void testIntegrationIsoscelesTriangle(){
+		inputA.setText("10");
+		inputB.setText("10");
+		inputC.setText("2");
+		calculateButton.performClick();
+		final String expected = "Isoscalene Triangle";
+		String actual = output.getText().toString();
+		assertEquals(expected, actual);
+	}
+	*/
 }
