@@ -49,5 +49,9 @@ public class MyFirstTestActivity extends Activity {
     	}
     	return true;
     }
+    
+    public boolean validateInputRange(String a, String b, String c){
+    	return false;
+    }
 }
 

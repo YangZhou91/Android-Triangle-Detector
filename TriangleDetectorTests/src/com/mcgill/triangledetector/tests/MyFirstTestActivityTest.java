@@ -78,13 +78,21 @@ public class MyFirstTestActivityTest
 		assertEquals(expected, "33");
 	}
 	
-	@UiThreadTest
 	public void testInvalidInput(){
 		final String inputA = "2";
 		final String inputB = "2";
 		final String inputC = "2";
-		boolean actual = mFirstTestActivity.validateInputs(inputA, inputB, inputC);
 		final boolean expected = true;
+		boolean actual = mFirstTestActivity.validateInputs(inputA, inputB, inputC);
 		assertEquals(expected, actual);
 	}
+	
+	public void testInvalidRange(){
+		final String inputA = "200";
+		final String inputB = "200";
+		final String inputC = "200";
+		final boolean expected = true; 
+		boolean actual = mFirstTestActivity.validateInputRange(inputA, inputB, inputC);
+		assertEquals(expected, actual);
+ 	}
 }
